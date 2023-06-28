@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Windows 8 Start Screen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 2px;
+            padding: 10px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .tile {
+            background-color: #0033A0;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            height: 100px;
+        }
+
+        .wide-tile {
+            grid-column: span 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tile" style="grid-column: span 6;" style="width: 300px;">Search</div>
+        <div class="tile" style="grid-column: span 6;">Apps View</div>
+        <div class="tile wide-tile">Tile 1</div>
+        <div class="tile wide-tile">Tile 2</div>
+        <div class="tile">Tile 3</div>
+        <div class="tile">Tile 4</div>
+        <div class="tile">Tile 5</div>
+        <div class="tile">Tile 6</div>
+        <div class="tile">Tile 7</div>
+        <div class="tile">Tile 8</div>
+        <div class="tile">Tile 9</div>
+    </div>
+</body>
+</html>
